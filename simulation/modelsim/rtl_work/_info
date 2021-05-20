@@ -1,0 +1,275 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Courses/CS226-CPU-Project/simulation/modelsim
+Ecputest
+Z1 w1621540201
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+R0
+Z6 8D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd
+Z7 FD:/Courses/CS226-CPU-Project/iitbproc_tb.vhd
+l0
+Z8 L10 1
+V4JX5H4^eb1SQ_=RMMC1HJ0
+!s100 Mz^lMaN:Z_2TXz5;bZcXL3
+Z9 OV;C;2020.1;71
+31
+Z10 !s110 1621540537
+!i10b 1
+Z11 !s108 1621540537.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd|
+Z13 !s107 D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Abehv
+R2
+R3
+R4
+R5
+Z16 DEx4 work 7 cputest 0 22 4JX5H4^eb1SQ_=RMMC1HJ0
+!i122 6
+l29
+Z17 L13 99
+Z18 ViCi;[_I8KGBZ_eUjzmLmi3
+Z19 !s100 _do1Q>:9KzK`hGhAU>XYh2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Eiitbproc
+Z20 w1621540503
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R4
+R5
+!i122 4
+R0
+Z23 8D:/Courses/CS226-CPU-Project/iitbproc.vhd
+Z24 FD:/Courses/CS226-CPU-Project/iitbproc.vhd
+l0
+R8
+V>0C^8VJi0JIISK6HA16?;3
+!s100 gX0jn_[]T6eX<IBLS=4Ii2
+R9
+31
+Z25 !s110 1621540536
+!i10b 1
+Z26 !s108 1621540536.000000
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/iitbproc.vhd|
+Z28 !s107 D:/Courses/CS226-CPU-Project/iitbproc.vhd|
+!i113 1
+R14
+R15
+Afinal
+R21
+R22
+R2
+R4
+R5
+DEx4 work 8 iitbproc 0 22 >0C^8VJi0JIISK6HA16?;3
+!i122 4
+l65
+L20 69
+VY[P]T7=6UbLnOlR``3O1H2
+!s100 dhDnU2@=Q>lE;cI=H7Sg91
+R9
+31
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R14
+R15
+Eram
+Z29 w1621539566
+R2
+R4
+R5
+!i122 0
+R0
+Z30 8D:/Courses/CS226-CPU-Project/RAM.vhd
+Z31 FD:/Courses/CS226-CPU-Project/RAM.vhd
+l0
+L5 1
+VL[jF>Ed[]2=ZKPZCAU^fa3
+!s100 Az@?Rc08MSfP>]?eSDf>L0
+R9
+31
+R25
+!i10b 1
+R26
+Z32 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/RAM.vhd|
+Z33 !s107 D:/Courses/CS226-CPU-Project/RAM.vhd|
+!i113 1
+R14
+R15
+Artl
+R2
+R4
+R5
+DEx4 work 3 ram 0 22 L[jF>Ed[]2=ZKPZCAU^fa3
+!i122 0
+l18
+Z34 L15 16
+VE5W:;7TOAV9Pk3^A:F=KO0
+!s100 MIhN5=L6^:jPzi2S4C40[3
+R9
+31
+R25
+!i10b 1
+R26
+R32
+R33
+!i113 1
+R14
+R15
+Eregister_16bit
+Z35 w1621524532
+R2
+R4
+R5
+!i122 2
+R0
+Z36 8D:/Courses/CS226-CPU-Project/register_16bit.vhd
+Z37 FD:/Courses/CS226-CPU-Project/register_16bit.vhd
+l0
+L5 1
+VGz?DP7M31J4IO`9lXL=2C1
+!s100 44SYTTX@H5PJdm<l`DY_N1
+R9
+31
+R25
+!i10b 1
+R26
+Z38 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_16bit.vhd|
+Z39 !s107 D:/Courses/CS226-CPU-Project/register_16bit.vhd|
+!i113 1
+R14
+R15
+Aarch
+R2
+R4
+R5
+DEx4 work 14 register_16bit 0 22 Gz?DP7M31J4IO`9lXL=2C1
+!i122 2
+l17
+R34
+V[Uj5jzBAIjfg^P7Ygg]g[2
+!s100 0`IW^Z@0Vi:2^F>Z8Ob]93
+R9
+31
+R25
+!i10b 1
+R26
+R38
+R39
+!i113 1
+R14
+R15
+Eregister_1bit
+R35
+R2
+R4
+R5
+!i122 3
+R0
+Z40 8D:/Courses/CS226-CPU-Project/register_1bit.vhd
+Z41 FD:/Courses/CS226-CPU-Project/register_1bit.vhd
+l0
+L5 1
+VId]<?W2mcIe0dh`>NMb=R1
+!s100 Q<D6zZzLiEaOoQ:4IG5cF3
+R9
+31
+R25
+!i10b 1
+R26
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_1bit.vhd|
+Z43 !s107 D:/Courses/CS226-CPU-Project/register_1bit.vhd|
+!i113 1
+R14
+R15
+Aarch
+R2
+R4
+R5
+DEx4 work 13 register_1bit 0 22 Id]<?W2mcIe0dh`>NMb=R1
+!i122 3
+l17
+R34
+V@8K28`8ZaZ3MaI>?PSkT<3
+!s100 MUII`W^X=G2]]2LIL^`>H3
+R9
+31
+R25
+!i10b 1
+R26
+R42
+R43
+!i113 1
+R14
+R15
+Eregister_file
+R35
+R2
+R4
+R5
+!i122 1
+R0
+Z44 8D:/Courses/CS226-CPU-Project/register_file.vhd
+Z45 FD:/Courses/CS226-CPU-Project/register_file.vhd
+l0
+L5 1
+VSa2=V?E5d<@4Mkb?I]leG1
+!s100 ]f19A:0H@HeljMX5ngc>d0
+R9
+31
+R25
+!i10b 1
+R26
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_file.vhd|
+Z47 !s107 D:/Courses/CS226-CPU-Project/register_file.vhd|
+!i113 1
+R14
+R15
+Aarch
+R2
+R4
+R5
+DEx4 work 13 register_file 0 22 Sa2=V?E5d<@4Mkb?I]leG1
+!i122 1
+l22
+L19 18
+Vo=bJ2`[<GnSJHk2>4U_PP2
+!s100 A<a]5_Z279KVW:MeXj@C[2
+R9
+31
+R25
+!i10b 1
+R26
+R46
+R47
+!i113 1
+R14
+R15

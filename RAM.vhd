@@ -23,6 +23,7 @@ BEGIN
          IF (writeControl = '1') THEN
             ram_block((to_integer(unsigned(address)))) <= input;
          END IF;
+			report  integer'image(to_integer(unsigned(address))) & " " & integer'image(to_integer(unsigned(ram_block((to_integer(unsigned(address)))))));
          output <= ram_block((to_integer(unsigned(address))));
       END IF;
    END PROCESS;

@@ -1,0 +1,28 @@
+library std;
+use std.standard.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;	 
+use ieee.std_logic_unsigned.all;
+
+entity iitb_proc is 
+	port (
+			wa, inst : in std_logic_vector(15 downto 0);
+			clk : in std_logic;
+			rst : in std_logic;
+			mem_w : in std_logic;
+			);
+end entity;
+
+architecture final of iitb_proc is
+
+	component register_1bit is
+	  port(
+		 output        : out std_logic;
+		 input       : in  std_logic;
+		 writeControl : in  std_logic;
+		 clk         : in  std_logic
+		 );
+	end register_1bit;
+end architecture
