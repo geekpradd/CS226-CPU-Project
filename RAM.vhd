@@ -14,7 +14,7 @@ ENTITY RAM IS
 END RAM;
 ARCHITECTURE rtl OF RAM IS
    TYPE mem IS ARRAY(0 TO 65535) OF std_logic_vector(15 DOWNTO 0);
-   SIGNAL ram_block : mem;
+   SIGNAL ram_block : mem:= (others => "0000000000000000");
 BEGIN
    PROCESS (clk)
    BEGIN

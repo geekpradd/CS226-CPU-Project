@@ -12,8 +12,7 @@ entity iitbproc is
 			wa, inst : in std_logic_vector(15 downto 0);
 			clk : in std_logic;
 			rst : in std_logic;
-			mw: in std_logic;
-			mem_out: out std_logic_vector(15 downto 0)
+			mw: in std_logic
 			);
 end entity;
 
@@ -32,7 +31,8 @@ architecture final of iitbproc is
 		 output        : out std_logic_vector(15 downto 0);
 		 input       : in  std_logic_vector(15 downto 0);
 		 writeControl : in  std_logic;
-		 clk         : in  std_logic
+		 clk         : in  std_logic;
+		 rst : in std_logic
 		 );
 	end component;
 	component register_file is
@@ -58,22 +58,32 @@ architecture final of iitbproc is
 		 );
 	end component;
 	
-	signal memory_address,memory_din, memory_write, rf_w, mem_w, ir_w, pc_w, t1_w, t2_w, t3_w, alu_carry, alu_zero, c_in, z_in, c_out, z_out, c_w, z_w: std_logic;
+	component ALU is
+		port(
+		A, B : in bit_vector(15 downto 0);                 --Inputs
+		control : in bit_vector(1 downto 0);    				--Control bit
+		ALU_out : out bit_vector(15 downto 0);					--Output vector
+		carry, zero : out bit								--Carry_out, zero bit
+		);
+	end component;
+
+	signal memory_write, rf_w, mem_w, ir_w, pc_w, t1_w, t2_w, t3_w, alu_carry, alu_zero, c_in, z_in, c_out, z_out, c_w, z_w: std_logic;
 	signal rf_a1, rf_a2, rf_a3: std_logic_vector(2 downto 0);
-	signal pc_in, pc_out, ir_in, ir_out, mem_a, mem_din, mem_dout, alu_a, alu_b, alu_c, rf_d1, rf_d2, rf_d3, t1_in, t1_out, t2_in, t2_out, t3_in, t3_out: std_logic_vector(15 downto 0);
-	
+	signal memory_address,memory_din, pc_in, pc_out, ir_in, ir_out, mem_a, mem_din, mem_dout, alu_a, alu_b, alu_c, rf_d1, rf_d2, rf_d3, t1_in, t1_out, t2_in, t2_out, t3_in, t3_out: std_logic_vector(15 downto 0);
+	signal alu_op: std_logic_vector(1 downto 0);
 	begin
-		pc: register_16bit port map(pc_out, pc_in, pc_w, clk);
+		pc: register_16bit port map(pc_out, pc_in, pc_w, clk, rst);
 		memory: RAM port map(memory_address, memory_din, mem_dout, memory_write, clk);
-		ir: register_16bit port map(ir_out, ir_in, ir_w, clk);
+		ir: register_16bit port map(ir_out, ir_in, ir_w, clk, rst);
 		rf: register_file port map(rf_d1, rf_d2, rf_d3, rf_w, rf_a1, rf_a2, rf_a3, clk);
-		t1: register_16bit port map(t1_out, t1_in, t1_w, clk);
-		t2: register_16bit port map(t2_out, t2_in, t1_w, clk);
-		t3: register_16bit port map(t3_out, t3_in, t1_w, clk);
+		t1: register_16bit port map(t1_out, t1_in, t1_w, clk, rst);
+		t2: register_16bit port map(t2_out, t2_in, t1_w, clk, rst);
+		t3: register_16bit port map(t3_out, t3_in, t1_w, clk, rst);
 		c: register_1bit port map(c_out, c_in, c_w, clk);
 		z: register_1bit port map(z_out, z_in, z_w, clk);
+		alu_1: ALU port map(alu_a, alu_b, alu_op, alu_c, alu_carry, alu_zero);
 		
-		mem_out <= mem_dout;
+		
 		memory_write <= mem_w or mw;
 		process(clk) is
 		begin
@@ -84,7 +94,8 @@ architecture final of iitbproc is
 					memory_din <= inst;
 				else
 					memory_din <= mem_din;
-					memory_address <= m_a;
+					memory_address <= mem_a;
 				end if;
+			end if;
 		end process;
 end architecture;

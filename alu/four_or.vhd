@@ -1,3 +1,10 @@
+library std;
+use std.standard.all;
+library ieee;
+use ieee.std_logic_1164.all;
+library ieee;
+use ieee.numeric_std.all; 
+
 entity four_or is
 	port( A0,A1,A2,A3 : in bit;
 			Y : out bit);

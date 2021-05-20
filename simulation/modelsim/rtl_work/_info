@@ -9,267 +9,771 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Courses/CS226-CPU-Project/simulation/modelsim
-Ecputest
-Z1 w1621540201
+Eadder16bit
+Z1 w1621541768
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 6
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
 R0
-Z6 8D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd
-Z7 FD:/Courses/CS226-CPU-Project/iitbproc_tb.vhd
+Z5 8D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd
+Z6 FD:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd
 l0
-Z8 L10 1
-V4JX5H4^eb1SQ_=RMMC1HJ0
-!s100 Mz^lMaN:Z_2TXz5;bZcXL3
-Z9 OV;C;2020.1;71
+L9 1
+VHb@zRY>hoW4:e?b24QN`81
+!s100 QiMQc1;H6PCfgD8[gm]P50
+Z7 OV;C;2020.1;71
 31
-Z10 !s110 1621540537
+Z8 !s110 1621542565
 !i10b 1
-Z11 !s108 1621540537.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd|
-Z13 !s107 D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd|
+Z9 !s108 1621542565.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd|
+Z11 !s107 D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd|
 !i113 1
-Z14 o-93 -work work
-Z15 tExplicit 1 CvgOpt 0
-Abehv
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aaddbhv
 R2
 R3
 R4
-R5
-Z16 DEx4 work 7 cputest 0 22 4JX5H4^eb1SQ_=RMMC1HJ0
-!i122 6
-l29
-Z17 L13 99
-Z18 ViCi;[_I8KGBZ_eUjzmLmi3
-Z19 !s100 _do1Q>:9KzK`hGhAU>XYh2
-R9
+DEx4 work 10 adder16bit 0 22 Hb@zRY>hoW4:e?b24QN`81
+!i122 9
+l31
+L18 22
+VjYS;dhUCo0=7G4bRYUI_j3
+!s100 A1WMckfb_je4N3ZUWl<Yk1
+R7
 31
-R10
+R8
 !i10b 1
+R9
+R10
 R11
+!i113 1
 R12
 R13
-!i113 1
-R14
-R15
-Eiitbproc
-Z20 w1621540503
-Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Ealu
+R1
 R2
+R3
 R4
-R5
-!i122 4
+!i122 8
 R0
-Z23 8D:/Courses/CS226-CPU-Project/iitbproc.vhd
-Z24 FD:/Courses/CS226-CPU-Project/iitbproc.vhd
+Z14 8D:/Courses/CS226-CPU-Project/alu/ALU.vhd
+Z15 FD:/Courses/CS226-CPU-Project/alu/ALU.vhd
 l0
-R8
-V>0C^8VJi0JIISK6HA16?;3
-!s100 gX0jn_[]T6eX<IBLS=4Ii2
-R9
+L8 1
+V8ij?WbM2OZ:EjnlmUlU2a1
+!s100 @:Aafi9cfUQV0E8KOo^OR0
+R7
 31
-Z25 !s110 1621540536
+R8
 !i10b 1
-Z26 !s108 1621540536.000000
-Z27 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/iitbproc.vhd|
-Z28 !s107 D:/Courses/CS226-CPU-Project/iitbproc.vhd|
+R9
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/ALU.vhd|
+Z17 !s107 D:/Courses/CS226-CPU-Project/alu/ALU.vhd|
 !i113 1
-R14
-R15
-Afinal
+R12
+R13
+Aalu_behavior
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 8ij?WbM2OZ:EjnlmUlU2a1
+!i122 8
+l41
+L19 52
+VG6[aakA9kd?Fb[6a?A2;>2
+!s100 XR7hZKPeBoElZnYiS`jX>3
+R7
+31
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Ebuffer_block
+Z18 w1621541767
+!i122 6
+R0
+Z19 8D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd
+Z20 FD:/Courses/CS226-CPU-Project/alu/KS16bit.vhd
+l0
+L31 1
+V8V6b3@m]1=O0HY@MPz[jh0
+!s100 jl_8hL[iIT>[LlCH^[`<H3
+R7
+31
+R8
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd|
+Z22 !s107 D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd|
+!i113 1
+R12
+R13
+Abuff
+DEx4 work 12 buffer_block 0 22 8V6b3@m]1=O0HY@MPz[jh0
+!i122 6
+l37
+L36 5
+Vd35IW7e`h`n8M1Rc]lI_b1
+!s100 ?G@je7305IAD3VjPBk`kl0
+R7
+31
+R8
+!i10b 1
+R9
 R21
 R22
-R2
-R4
-R5
-DEx4 work 8 iitbproc 0 22 >0C^8VJi0JIISK6HA16?;3
-!i122 4
-l65
-L20 69
-VY[P]T7=6UbLnOlR``3O1H2
-!s100 dhDnU2@=Q>lE;cI=H7Sg91
-R9
-31
-R25
-!i10b 1
-R26
-R27
-R28
 !i113 1
-R14
-R15
-Eram
-Z29 w1621539566
+R12
+R13
+Econtroller
+Z23 w1621541133
 R2
+R3
 R4
-R5
 !i122 0
 R0
-Z30 8D:/Courses/CS226-CPU-Project/RAM.vhd
-Z31 FD:/Courses/CS226-CPU-Project/RAM.vhd
+Z24 8D:/Courses/CS226-CPU-Project/Controller.vhd
+Z25 FD:/Courses/CS226-CPU-Project/Controller.vhd
+l0
+L9 1
+VH^:4j65DnP1j_W?FoL:GU2
+!s100 XdVPZMWOgk0ncQ?ndRQ?h2
+R7
+31
+Z26 !s110 1621542564
+!i10b 1
+Z27 !s108 1621542564.000000
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/Controller.vhd|
+Z29 !s107 D:/Courses/CS226-CPU-Project/Controller.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 10 controller 0 22 H^:4j65DnP1j_W?FoL:GU2
+!i122 0
+l27
+L15 186
+ViciJcF;oaDgH2hSacRodQ2
+!s100 J;]hd>V[Hm?V5RhnlfQ_F0
+R7
+31
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R12
+R13
+Ecputest
+Z30 w1621542561
+R2
+Z31 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R3
+R4
+!i122 16
+R0
+Z32 8D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd
+Z33 FD:/Courses/CS226-CPU-Project/iitbproc_tb.vhd
+l0
+Z34 L10 1
+V4JX5H4^eb1SQ_=RMMC1HJ0
+!s100 Mz^lMaN:Z_2TXz5;bZcXL3
+R7
+31
+Z35 !s110 1621542566
+!i10b 1
+Z36 !s108 1621542566.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd|
+Z38 !s107 D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd|
+!i113 1
+R12
+R13
+Abehv
+R2
+R31
+R3
+R4
+Z39 DEx4 work 7 cputest 0 22 4JX5H4^eb1SQ_=RMMC1HJ0
+!i122 16
+l29
+Z40 L13 98
+Z41 Vj2<X:NTc]:C^cFW6ci9C53
+Z42 !s100 >VZ4L2Va8FGKCTbCnK^<>1
+R7
+31
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R12
+R13
+Efour_or
+R18
+R2
+R3
+R4
+!i122 7
+R0
+Z43 8D:/Courses/CS226-CPU-Project/alu/four_or.vhd
+Z44 FD:/Courses/CS226-CPU-Project/alu/four_or.vhd
+l0
+L8 1
+VX<3i@bYAN[3eCITnVojXT0
+!s100 0BoZ^[G[W99i3IV=m`zXQ1
+R7
+31
+R8
+!i10b 1
+R9
+Z45 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/four_or.vhd|
+Z46 !s107 D:/Courses/CS226-CPU-Project/alu/four_or.vhd|
+!i113 1
+R12
+R13
+Aor4_bhv
+R2
+R3
+R4
+DEx4 work 7 four_or 0 22 X<3i@bYAN[3eCITnVojXT0
+!i122 7
+l15
+L14 5
+VFmJjea62:lFn6V>Kgn<cH2
+!s100 g8Y=Vc16ecG6zJVH:[W^D3
+R7
+31
+R8
+!i10b 1
+R9
+R45
+R46
+!i113 1
+R12
+R13
+Eiitbproc
+Z47 w1621542341
+Z48 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z49 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+R4
+!i122 14
+R0
+Z50 8D:/Courses/CS226-CPU-Project/iitbproc.vhd
+Z51 FD:/Courses/CS226-CPU-Project/iitbproc.vhd
+l0
+R34
+V>0C^8VJi0JIISK6HA16?;3
+!s100 gX0jn_[]T6eX<IBLS=4Ii2
+R7
+31
+R35
+!i10b 1
+R36
+Z52 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/iitbproc.vhd|
+Z53 !s107 D:/Courses/CS226-CPU-Project/iitbproc.vhd|
+!i113 1
+R12
+R13
+Afinal
+R48
+R49
+R2
+R3
+R4
+DEx4 work 8 iitbproc 0 22 >0C^8VJi0JIISK6HA16?;3
+!i122 14
+l66
+L20 77
+VLB6e0PZDmi:^e1=hO_dYJ2
+!s100 ]od12EJ8jNFfW1;RQ_GO>0
+R7
+31
+R35
+!i10b 1
+R36
+R52
+R53
+!i113 1
+R12
+R13
+Eks16bit
+R18
+R2
+R3
+R4
+!i122 6
+R0
+R19
+R20
+l0
+L8 1
+V2JBd]`:=ThlaX`Lca@PEW1
+!s100 S9>KdJ544[]eJ_K<5JRDH2
+R7
+31
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 7 ks16bit 0 22 2JBd]`:=ThlaX`Lca@PEW1
+!i122 6
+l60
+L43 78
+V=2dkn?LG6I>YVM8D5:CMj3
+!s100 F53GdeL1UQjko@zPzz8n62
+R7
+31
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Enand_16
+Z54 w1621541766
+R2
+R3
+R4
+!i122 5
+R0
+Z55 8D:/Courses/CS226-CPU-Project/alu/nand16.vhd
+Z56 FD:/Courses/CS226-CPU-Project/alu/nand16.vhd
+l0
+L9 1
+VLmmfic16=?>z0Wogeo2TC3
+!s100 MGMHnDORXOSO;C_f8;zg>0
+R7
+31
+R8
+!i10b 1
+R9
+Z57 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/nand16.vhd|
+Z58 !s107 D:/Courses/CS226-CPU-Project/alu/nand16.vhd|
+!i113 1
+R12
+R13
+Abehav
+R2
+R3
+R4
+DEx4 work 7 nand_16 0 22 Lmmfic16=?>z0Wogeo2TC3
+!i122 5
+l24
+Z59 L16 18
+VK;LcfE2^:^[cL>W25f9Kn1
+!s100 4gR]4<UM[fi4<D3CkOgVi3
+R7
+31
+R8
+!i10b 1
+R9
+R57
+R58
+!i113 1
+R12
+R13
+Enode
+R18
+!i122 6
+R0
+R19
+R20
+l0
+L18 1
+V?Q95cVfNUi<<nNeHSN?E^0
+!s100 TmGAo@2elZi>>=[[iza7a0
+R7
+31
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Abhv
+DEx4 work 4 node 0 22 ?Q95cVfNUi<<nNeHSN?E^0
+!i122 6
+l25
+L24 5
+V3N=oBI09R<[KR=L:Bfg[E0
+!s100 BoLBiXJP6?z0H@STZo9iX1
+R7
+31
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Eram
+Z60 w1621542431
+R2
+R3
+R4
+!i122 10
+R0
+Z61 8D:/Courses/CS226-CPU-Project/RAM.vhd
+Z62 FD:/Courses/CS226-CPU-Project/RAM.vhd
 l0
 L5 1
 VL[jF>Ed[]2=ZKPZCAU^fa3
 !s100 Az@?Rc08MSfP>]?eSDf>L0
-R9
+R7
 31
-R25
+R35
 !i10b 1
-R26
-Z32 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/RAM.vhd|
-Z33 !s107 D:/Courses/CS226-CPU-Project/RAM.vhd|
+R9
+Z63 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/RAM.vhd|
+Z64 !s107 D:/Courses/CS226-CPU-Project/RAM.vhd|
 !i113 1
-R14
-R15
+R12
+R13
 Artl
 R2
+R3
 R4
-R5
 DEx4 work 3 ram 0 22 L[jF>Ed[]2=ZKPZCAU^fa3
-!i122 0
+!i122 10
 l18
-Z34 L15 16
-VE5W:;7TOAV9Pk3^A:F=KO0
-!s100 MIhN5=L6^:jPzi2S4C40[3
-R9
+Z65 L15 16
+VS><ISMQ2Wc>o[ocN1KN0]0
+!s100 Eb16YR;55JP70Wh=9jjl31
+R7
 31
-R25
+R35
 !i10b 1
-R26
-R32
-R33
+R9
+R63
+R64
 !i113 1
-R14
-R15
+R12
+R13
 Eregister_16bit
-Z35 w1621524532
+Z66 w1621542040
 R2
+R3
 R4
-R5
-!i122 2
+!i122 12
 R0
-Z36 8D:/Courses/CS226-CPU-Project/register_16bit.vhd
-Z37 FD:/Courses/CS226-CPU-Project/register_16bit.vhd
+Z67 8D:/Courses/CS226-CPU-Project/register_16bit.vhd
+Z68 FD:/Courses/CS226-CPU-Project/register_16bit.vhd
 l0
 L5 1
-VGz?DP7M31J4IO`9lXL=2C1
-!s100 44SYTTX@H5PJdm<l`DY_N1
-R9
+VVD?RkB8geQ^BYRFjE:2Re0
+!s100 KS[PMGnLhN8VXd_I3:EGj2
+R7
 31
-R25
+R35
 !i10b 1
-R26
-Z38 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_16bit.vhd|
-Z39 !s107 D:/Courses/CS226-CPU-Project/register_16bit.vhd|
+R36
+Z69 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_16bit.vhd|
+Z70 !s107 D:/Courses/CS226-CPU-Project/register_16bit.vhd|
 !i113 1
-R14
-R15
+R12
+R13
 Aarch
 R2
+R3
 R4
-R5
-DEx4 work 14 register_16bit 0 22 Gz?DP7M31J4IO`9lXL=2C1
-!i122 2
-l17
-R34
-V[Uj5jzBAIjfg^P7Ygg]g[2
-!s100 0`IW^Z@0Vi:2^F>Z8Ob]93
-R9
+DEx4 work 14 register_16bit 0 22 VD?RkB8geQ^BYRFjE:2Re0
+!i122 12
+l18
+R59
+V0cD]`=7jdKi^=bCnb=V_Y0
+!s100 >Ye];BEE;EFA]lYfQ]SfD3
+R7
 31
-R25
-!i10b 1
-R26
-R38
-R39
-!i113 1
-R14
-R15
-Eregister_1bit
 R35
+!i10b 1
+R36
+R69
+R70
+!i113 1
+R12
+R13
+Eregister_1bit
+Z71 w1621524532
 R2
+R3
 R4
-R5
-!i122 3
+!i122 13
 R0
-Z40 8D:/Courses/CS226-CPU-Project/register_1bit.vhd
-Z41 FD:/Courses/CS226-CPU-Project/register_1bit.vhd
+Z72 8D:/Courses/CS226-CPU-Project/register_1bit.vhd
+Z73 FD:/Courses/CS226-CPU-Project/register_1bit.vhd
 l0
 L5 1
 VId]<?W2mcIe0dh`>NMb=R1
 !s100 Q<D6zZzLiEaOoQ:4IG5cF3
-R9
+R7
 31
-R25
+R35
 !i10b 1
-R26
-Z42 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_1bit.vhd|
-Z43 !s107 D:/Courses/CS226-CPU-Project/register_1bit.vhd|
+R36
+Z74 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_1bit.vhd|
+Z75 !s107 D:/Courses/CS226-CPU-Project/register_1bit.vhd|
 !i113 1
-R14
-R15
+R12
+R13
 Aarch
 R2
+R3
 R4
-R5
 DEx4 work 13 register_1bit 0 22 Id]<?W2mcIe0dh`>NMb=R1
-!i122 3
+!i122 13
 l17
-R34
+R65
 V@8K28`8ZaZ3MaI>?PSkT<3
 !s100 MUII`W^X=G2]]2LIL^`>H3
-R9
+R7
 31
-R25
-!i10b 1
-R26
-R42
-R43
-!i113 1
-R14
-R15
-Eregister_file
 R35
+!i10b 1
+R36
+R74
+R75
+!i113 1
+R12
+R13
+Eregister_file
+R71
 R2
+R3
 R4
-R5
-!i122 1
+!i122 11
 R0
-Z44 8D:/Courses/CS226-CPU-Project/register_file.vhd
-Z45 FD:/Courses/CS226-CPU-Project/register_file.vhd
+Z76 8D:/Courses/CS226-CPU-Project/register_file.vhd
+Z77 FD:/Courses/CS226-CPU-Project/register_file.vhd
 l0
 L5 1
 VSa2=V?E5d<@4Mkb?I]leG1
 !s100 ]f19A:0H@HeljMX5ngc>d0
-R9
+R7
 31
-R25
+R35
 !i10b 1
-R26
-Z46 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_file.vhd|
-Z47 !s107 D:/Courses/CS226-CPU-Project/register_file.vhd|
+R36
+Z78 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/register_file.vhd|
+Z79 !s107 D:/Courses/CS226-CPU-Project/register_file.vhd|
 !i113 1
-R14
-R15
+R12
+R13
 Aarch
 R2
+R3
 R4
-R5
 DEx4 work 13 register_file 0 22 Sa2=V?E5d<@4Mkb?I]leG1
-!i122 1
+!i122 11
 l22
 L19 18
 Vo=bJ2`[<GnSJHk2>4U_PP2
 !s100 A<a]5_Z279KVW:MeXj@C[2
-R9
+R7
 31
-R25
+R35
 !i10b 1
-R26
-R46
-R47
+R36
+R78
+R79
 !i113 1
-R14
-R15
+R12
+R13
+Esub16bit
+Z80 w1621541765
+R2
+R3
+R4
+!i122 4
+R0
+Z81 8D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd
+Z82 FD:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd
+l0
+L9 1
+VXD2WgfIHdXzVS5>Gz^YJi1
+!s100 ?=AWQ@@QYmh9JF]1Ro<z@3
+R7
+31
+R8
+!i10b 1
+R9
+Z83 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd|
+Z84 !s107 D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd|
+!i113 1
+R12
+R13
+Asubbhv
+R2
+R3
+R4
+DEx4 work 8 sub16bit 0 22 XD2WgfIHdXzVS5>Gz^YJi1
+!i122 4
+l30
+L17 22
+V@6k4XIg[J[NgLXW4AIKmg2
+!s100 @2=g1dBLkBEI549JO@bHm0
+R7
+31
+R8
+!i10b 1
+R9
+R83
+R84
+!i113 1
+R12
+R13
+Etestbench
+R80
+R2
+R3
+R4
+!i122 2
+R0
+Z85 8D:/Courses/CS226-CPU-Project/alu/testbench.vhd
+Z86 FD:/Courses/CS226-CPU-Project/alu/testbench.vhd
+l0
+L8 1
+ViC7E97_5LN?fAefzF2C^C3
+!s100 3Y<Om>Zzk9=j=W:>b:9Rf2
+R7
+31
+R8
+!i10b 1
+R9
+Z87 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/testbench.vhd|
+Z88 !s107 D:/Courses/CS226-CPU-Project/alu/testbench.vhd|
+!i113 1
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 9 testbench 0 22 iC7E97_5LN?fAefzF2C^C3
+!i122 2
+l31
+L11 36
+Vjf;`>mV03f9hH=B9hE[dS3
+!s100 Pcj=ZZ1>gzOz[Q_HKAUVn2
+R7
+31
+R8
+!i10b 1
+R9
+R87
+R88
+!i113 1
+R12
+R13
+Etestbench_alu
+Z89 w1621541726
+R2
+R3
+R4
+!i122 1
+R0
+Z90 8D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd
+Z91 FD:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd
+l0
+L9 1
+Vid5:G0L_clzfQkXAGm3ae2
+!s100 D0Uf^ZH?:6XIbX@jh8eIb1
+R7
+31
+R8
+!i10b 1
+R27
+Z92 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd|
+Z93 !s107 D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd|
+!i113 1
+R12
+R13
+Abehav1
+R2
+R3
+R4
+DEx4 work 13 testbench_alu 0 22 id5:G0L_clzfQkXAGm3ae2
+!i122 1
+l36
+L12 72
+V3oUM7Dz@Rll`iozm=F8c50
+!s100 B];mNc7`Rk8M=ZoKeQS9d2
+R7
+31
+R8
+!i10b 1
+R27
+R92
+R93
+!i113 1
+R12
+R13
+Etwo_nand
+Z94 w1621541732
+R2
+R3
+R4
+!i122 3
+R0
+Z95 8D:/Courses/CS226-CPU-Project/alu/two_nand.vhd
+Z96 FD:/Courses/CS226-CPU-Project/alu/two_nand.vhd
+l0
+L8 1
+VK];1Mn>ZBfX9A93dg^hdU2
+!s100 :Zd5lP?P<^>:GSd_LXeXB2
+R7
+31
+R8
+!i10b 1
+R9
+Z97 !s90 -reportprogress|300|-93|-work|work|D:/Courses/CS226-CPU-Project/alu/two_nand.vhd|
+Z98 !s107 D:/Courses/CS226-CPU-Project/alu/two_nand.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 8 two_nand 0 22 K];1Mn>ZBfX9A93dg^hdU2
+!i122 3
+l18
+L16 6
+VZcdZez^d4UNLnSNEY8`ja0
+!s100 RV4BXlHCM>n4Z3zB6fOfS1
+R7
+31
+R8
+!i10b 1
+R9
+R97
+R98
+!i113 1
+R12
+R13

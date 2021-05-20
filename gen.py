@@ -8,5 +8,5 @@ for _ in range(l):
 		s += temp
 	s += "\n"
 
-with open("inp", "w") as f:
+with open("input_file.txt", "w") as f:
 	f.write(s)

@@ -1,3 +1,9 @@
+library std;
+use std.standard.all;
+library ieee;
+use ieee.std_logic_1164.all;
+library ieee;
+use ieee.numeric_std.all; 
 use STD.textio.all;   -- To take i/o from a file
 
 entity Testbench_alu is

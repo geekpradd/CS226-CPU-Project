@@ -17,18 +17,17 @@ architecture behv of cputest is
 			wa, inst : in std_logic_vector(15 downto 0);
 			clk : in std_logic;
 			rst : in std_logic;
-			mw : in std_logic;
-			mem_out: out std_logic_vector(15 downto 0)
+			mw : in std_logic
 		);
 	end component;
 	
-	signal wa, inst, mem_out : std_logic_vector(15 downto 0);
+	signal wa, inst : std_logic_vector(15 downto 0);
 	signal clk : std_logic := '1';
 	signal rst, mw : std_logic;
 	
 begin
 	dut_instance: iitbproc
-		port map (wa => wa, inst => inst, clk => clk, rst => rst, mw => mw, mem_out => mem_out);
+		port map (wa => wa, inst => inst, clk => clk, rst => rst, mw => mw);
 	
 	
 	process 
@@ -40,6 +39,7 @@ begin
 		variable curr : integer range 0 to 64;
 		
 		begin
+		
 			count := 0;
 			curr := 0;
 			wa <= "0000000000000000";
@@ -55,50 +55,47 @@ begin
 				wait for 100 ns;
 				clk <= '1';
 				wait for 100 ns;
-				clk <= '0';
-				wait for 100 ns;
-				clk <= '1';
-				wait for 100 ns;
 				wa <= std_logic_vector ( unsigned(wa) + 1);
 				count := count + 1;
 			end loop;
 			
 			
-				
+			
 			
 --			execute instructions
-			mw <= '0';
-			wa <= "0000000000000000";
-			rst <= '0';
+--			mw <= '0';
+--			wa <= "0000000000000000";
+--			rst <= '0';
+--			
+--			clk <= '0';
+--			wait for 100 ns;
+--			clk <= '1';
+--			wait for 100 ns;
+--			
+--			while curr < count loop
+--				clk <= '0';
+--				wait for 100 ns;
+--				clk <= '1';
+--				wait for 100 ns;
+--
+--				output_var := mem_out;
+--				write (output_line, output_var);
+--				writeline (output_file, output_line);
+--				
+----				if (start = '1') then
+--				curr := curr + 1;
+----				end if;
+--				wa <= std_logic_vector ( unsigned(wa) + 1);
+--			end loop;
 			
+			wa <= "0000000000000000";
 			clk <= '0';
 			wait for 100 ns;
 			clk <= '1';
 			wait for 100 ns;
-			
-			while curr < count loop
-				clk <= '0';
-				wait for 100 ns;
-				clk <= '1';
-				wait for 100 ns;
-
-				output_var := mem_out;
-				write (output_line, output_var);
-				writeline (output_file, output_line);
-				
---				if (start = '1') then
-				curr := curr + 1;
---				end if;
-				wa <= std_logic_vector ( unsigned(wa) + 1);
-			end loop;
-			
-			wa <= "0000000000000000";
 			clk <= '0';
 			wait for 100 ns;
-			clk <= '1';
-			wait for 100 ns;
-			clk <= '0';
-			wait for 100 ns;
+			rst <='1';
 			clk <= '1';
 			wait for 100 ns;
 			clk <= '0';
