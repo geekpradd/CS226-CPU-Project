@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity RAM is
   port(
-	 address       : in std_logic_vector(65535 downto 0);
+	 address       : in std_logic_vector(15 downto 0);
     output        : out std_logic_vector(15 downto 0);
     input       : in  std_logic_vector(15 downto 0);
     writeControl : in  std_logic;
