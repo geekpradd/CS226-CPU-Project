@@ -1,32 +1,29 @@
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
 use ieee.numeric_std.all;
 
-entity RAM is
-  port(
-	 address       : in std_logic_vector(15 downto 0);
-    output        : out std_logic_vector(15 downto 0);
-    input       : in  std_logic_vector(15 downto 0);
-    writeControl : in  std_logic;
-    clk         : in  std_logic
-    );
-end RAM;
-
-
-architecture arch of RAM is
-  type ramstruct is array(0 to 65535) of std_logic_vector(15 downto 0);
-  signal ram : ramstruct := (others=>"0000000000000000");
-begin
-  output <= ram((to_integer(unsigned(address))));
-		
-  ramFile : process (clk) is
-  begin
-    if rising_edge(clk) then
-
-      if writeControl = '1' then
-        ram((to_integer(unsigned(address)))) <= input; 
-      end if;
-
-    end if;
-  end process;
-end arch;
+ENTITY RAM IS
+   PORT
+   (
+      address:  IN   std_logic_vector (15 DOWNTO 0);
+		input:  IN   std_logic_vector (15 DOWNTO 0);
+		 output:     OUT  std_logic_vector (15 DOWNTO 0);
+      writeControl :    IN   std_logic;
+		clk: IN   std_logic
+   );
+END RAM;
+ARCHITECTURE rtl OF RAM IS
+   TYPE mem IS ARRAY(0 TO 65535) OF std_logic_vector(15 DOWNTO 0);
+   SIGNAL ram_block : mem;
+BEGIN
+   PROCESS (clk)
+   BEGIN
+ -- clk'event AND clk = '1'
+      IF (rising_edge(clk)) THEN
+         IF (writeControl = '1') THEN
+            ram_block((to_integer(unsigned(address)))) <= input;
+         END IF;
+         output <= ram_block((to_integer(unsigned(address))));
+      END IF;
+   END PROCESS;
+END rtl;
