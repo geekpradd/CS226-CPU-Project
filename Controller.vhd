@@ -15,7 +15,8 @@ entity Controller is
 	 c_in, z_in: out std_logic;
 	 ir_write, pc_write, t1_write, t2_write, t3_write, rf_write, memory_write, c_write, z_write : out std_logic;
 	 rf_a1, rf_a2, rf_a3 : out std_logic_vector(2 downto 0);
-	 alu_op: out std_logic_vector(1 downto 0)
+	 alu_op: out std_logic_vector(1 downto 0);
+	 state_out: out std_logic_vector(4 downto 0)
 	 );
 end entity; 
 
@@ -27,14 +28,15 @@ type FSMState is (Sres, S0, S00, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S
 signal state: FSMState;
 begin
 
-process(clk,state)	
-	variable op_code :std_logic_vector(3 downto 0);
+process(clk,state, pc_out, ir_out, m_data_out, t1_out, t2_out, t3_out, alu_c, rf_d1, rf_d2, c_out, z_out, alu_carry, alu_zero)	
+	variable op_code :std_logic_vector(15 downto 12);
 	variable next_state: FSMState;
 	 variable temp: std_logic := '0';
 begin
 	next_state := state;
   case state is
 		when Sres =>
+			state_out <= "11111";
 			 c_write <= '0';
 			 z_write <= '0';
 			 ir_write <= '0';
@@ -47,10 +49,11 @@ begin
 			 next_state := S0;
 ----------------------------------------------------------
 		when S0 =>
+			state_out <= "00000";
 			m_add <= pc_out;
 			ir_in <= m_data_out;
 			ir_write <= '1';
-			op_code := ir_out(15 downto 12);
+			op_code := m_data_out(15 downto 12);
 			case op_code is
 				when "0000" =>
 					next_state := S00;
@@ -78,6 +81,7 @@ begin
 			end case;
 ----------------------------------------------------------
 		when S00 =>
+				state_out <= "11000";
 				t3_write <= '0';
 				ir_write <= '0';
 				pc_write <= '1';
@@ -106,6 +110,7 @@ begin
 				
 ----------------------------------------------------------
 		when S1 =>
+				state_out <= "00001";
 				ir_write <= '0';
 				pc_write <= '0';
 				t1_write <= '1';
@@ -124,6 +129,7 @@ begin
 				end if;
 ----------------------------------------------
 		when S2 =>
+				state_out <= "00010";
 				t1_write <= '0';
 				t2_write <= '0';
 				t3_write <= '1';
@@ -160,6 +166,7 @@ begin
 				end case;
 ---------------------------------------------------------------			 
 		when S3 =>
+				state_out <= "00011";
 			   rf_write <= '1';
 				t3_write <= '0';
 				c_write <= '0';
@@ -169,6 +176,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------
 		when S4 =>
+				state_out <= "00100";
 				pc_write <= '0';
 				t1_write <= '1';
 				t2_write <= '1';
@@ -183,6 +191,7 @@ begin
 				end if;
 -----------------------------------------------------------------				
 		when S5 =>
+				state_out <= "00101";
 				t3_write <= '0';
 				c_write <= '0';
 				z_write <= '0';
@@ -192,6 +201,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------				
 		when S6 =>
+				state_out <= "00110";
 				pc_write <= '0';
 			   t3_write <= '1';
 				t3_in <= ir_out(8 downto 0) & "0000000";
@@ -203,6 +213,7 @@ begin
 				end if;
 -----------------------------------------------------------------
 		when S7 =>
+				state_out <= "00111";
 			   rf_write <= '1';
 				t3_write <= '0';
 				rf_d3 <= t3_out;
@@ -210,6 +221,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------
       when S8 =>
+				state_out <= "01000";
 				pc_write <= '0';
 				t1_write <= '1';
 				t2_write <= '1';
@@ -224,6 +236,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S9 =>
+				state_out <= "01001";
 				t3_write <= '0';
 				c_write <= '0';
 				z_write <= '0';
@@ -234,6 +247,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------
       when S10 =>
+				state_out <= "01010";
 				t3_write <= '0';
 				c_write <= '0';
 				z_write <= '0';
@@ -244,6 +258,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------
 	   when S11 =>
+				state_out <= "01011";
 				pc_write <= '0';
 				t1_write <= '1';
 				t2_write <= '1';
@@ -260,6 +275,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S12 =>				
+				state_out <= "01100";
 				t1_write <= '0';
 				t2_write <= '0';
 				rf_write <= '1';
@@ -274,6 +290,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S13 =>
+				state_out <= "01101";
 				rf_write <= '0';
 				memory_write <= '0';
 				t1_write <= '1';
@@ -289,6 +306,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S14 =>
+				state_out <= "01110";
 				t1_write <= '0';
 				t2_write <= '1';
 				alu_op <= "00";
@@ -296,7 +314,7 @@ begin
 				alu_b <= "0000000000000001";
 				t2_in <= alu_c;
 
-				if (t2_out(2 downto 0) = "111") then
+				if (t2_out(3 downto 0) = "1000") then
 					next_state := Sres;
 				else
 					if (op_code = "0111") then
@@ -309,6 +327,7 @@ begin
 				end if;
 -----------------------------------------------------------------				  
       when S15 =>
+				state_out <= "01111";
 				t1_write <= '0';
 				t2_write <= '0';
 				memory_write <= '1';
@@ -323,6 +342,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S16 =>
+				state_out <= "10000";
 				t1_write <= '0';
 				t2_write <= '0';
 				t3_write <= '1';
@@ -338,6 +358,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S17 =>
+				state_out <= "10001";
 				t3_write <= '0';
 				pc_write <= '1';
 				alu_op <= "00";
@@ -347,6 +368,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------
       when S18 =>
+				state_out <= "10010";
 				ir_write <= '0';
 				rf_write <= '1';
 				rf_a3 <= ir_out(11 downto 9);
@@ -361,6 +383,7 @@ begin
 				end if;
 -----------------------------------------------------------------
       when S19 =>
+				state_out <= "10011";
 				rf_write <= '0';
 				pc_write <= '1';
 				alu_op <= "00";
@@ -370,6 +393,7 @@ begin
 				next_state := Sres;
 -----------------------------------------------------------------
       when S20 =>
+				state_out <= "10010";
 				rf_write <= '0';
 				pc_write <= '1';
 				rf_a1 <= ir_out(8 downto 6);
@@ -378,8 +402,8 @@ begin
 -----------------------------------------------------------------				
 		when others => null;
   end case;		
-  
- if(clk'event and clk = '0') then
+ 
+ if rising_edge(clk)  then
           if(rst = '1') then
              state <= Sres;
           else

@@ -17,22 +17,24 @@ architecture behv of cputest is
 			wa, inst : in std_logic_vector(15 downto 0);
 			clk : in std_logic;
 			rst : in std_logic;
-			mw : in std_logic
+			mw : in std_logic;
+			state_out: out std_logic_vector(4 downto 0)
 		);
 	end component;
 	
 	signal wa, inst : std_logic_vector(15 downto 0);
 	signal clk : std_logic := '1';
 	signal rst, mw : std_logic;
+	signal state_out: std_logic_vector(4 downto 0);
 	
 begin
 	dut_instance: iitbproc
-		port map (wa => wa, inst => inst, clk => clk, rst => rst, mw => mw);
+		port map (wa => wa, inst => inst, clk => clk, rst => rst, mw => mw, state_out => state_out);
 	
 	
 	process 
-		file in_file: text open read_mode is "E:/226/input_file.txt";
-		file output_file: text open write_mode is "E:/226/output_file.txt";
+		file in_file: text open read_mode is "D:/Courses/CS226-CPU-Project/input_file.txt";
+		file output_file: text open write_mode is "D:/Courses/CS226-CPU-Project/output_file.txt";
 		variable in_line,output_line : line;
 		variable in_var,output_var : std_logic_vector(15 downto 0);
 		variable count : integer range 0 to 64;
@@ -49,11 +51,11 @@ begin
 			while not endfile(in_file) loop
 				readline (in_file, in_line);
 				read (in_line, in_var);
-				clk <= '0';
+				clk <= '1';
 				inst <= in_var;
 				mw <= '1';
 				wait for 100 ns;
-				clk <= '1';
+				clk <= '0';
 				wait for 100 ns;
 				wa <= std_logic_vector ( unsigned(wa) + 1);
 				count := count + 1;
@@ -62,16 +64,16 @@ begin
 			
 			rst <= '1';
 			mw <= '0';
-			clk <= '1';
-			wait for 100 ns;
 			clk <= '0';
+			wait for 100 ns;
+			clk <= '1';
 			wait for 100 ns;
 	
 			rst <= '0';
 			for i in 1 to 1000 loop
-				clk <= '1';
-				wait for 100 ns;
 				clk <= '0';
+				wait for 100 ns;
+				clk <= '1';
 				wait for 100 ns;
 			end loop;
 			

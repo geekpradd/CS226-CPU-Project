@@ -12,7 +12,8 @@ entity iitbproc is
 			wa, inst : in std_logic_vector(15 downto 0);
 			clk : in std_logic;
 			rst : in std_logic;
-			mw: in std_logic
+			mw: in std_logic;
+			state_out: out std_logic_vector(4 downto 0)
 			);
 end entity;
 
@@ -76,14 +77,21 @@ architecture final of iitbproc is
 		 c_in, z_in: out std_logic;
 		 ir_write, pc_write, t1_write, t2_write, t3_write, rf_write, memory_write, c_write, z_write : out std_logic;
 		 rf_a1, rf_a2, rf_a3 : out std_logic_vector(2 downto 0);
-		 alu_op: out std_logic_vector(1 downto 0)
+		 alu_op: out std_logic_vector(1 downto 0);
+		 state_out: out std_logic_vector(4 downto 0)
 		 );
 	end component; 
-	
+	component TwoByOneMux is
+		port (i0 : in std_logic;
+				i1 : in std_logic;
+				sel : in std_logic; 
+				z : out std_logic);
+	end component;
 	signal memory_write, rf_w, mem_w, ir_w, pc_w, t1_w, t2_w, t3_w, alu_carry, alu_zero, c_in, z_in, c_out, z_out, c_w, z_w: std_logic;
 	signal rf_a1, rf_a2, rf_a3: std_logic_vector(2 downto 0);
 	signal memory_address,memory_din, pc_in, pc_out, ir_in, ir_out, mem_a, mem_din, mem_dout, alu_a, alu_b, alu_c, rf_d1, rf_d2, rf_d3, t1_in, t1_out, t2_in, t2_out, t3_in, t3_out: std_logic_vector(15 downto 0);
 	signal alu_op: std_logic_vector(1 downto 0);
+	
 	begin
 		pc: register_16bit port map(pc_out, pc_in, pc_w, clk, rst);
 		memory: RAM port map(memory_address, memory_din, mem_dout, memory_write, clk);
@@ -102,20 +110,16 @@ architecture final of iitbproc is
 			c_out => c_out, z_out => z_out,
 			ir_write => ir_w, pc_write => pc_w, t1_write => t1_w, t2_write => t2_w, t3_write => t3_w, rf_write => rf_w, memory_write => mem_w, c_write => c_w, z_write => z_w,
 			rf_a1 => rf_a1, rf_a2 => rf_a2, rf_a3 => rf_a3,
-			alu_op => alu_op);
+			alu_op => alu_op, state_out => state_out);
 
 		
 		memory_write <= mem_w or mw;
-		process(clk) is
-		begin
-			if rising_edge(clk) then
-				if mw = '1' then
-					memory_address <= wa;
-					memory_din <= inst;
-				else
-					memory_din <= mem_din;
-					memory_address <= mem_a;
-				end if;
-			end if;
-		end process;
+		
+		address: 	for i in 0 to 15 generate
+			addnode : TwoByOneMux port map(mem_a(i), wa(i), mw, memory_address(i));
+		end generate address;
+		datain: 	for i in 0 to 15 generate
+			addnode : TwoByOneMux port map(mem_din(i), inst(i), mw, memory_din(i));
+		end generate datain;
+		
 end architecture;

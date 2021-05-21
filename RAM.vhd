@@ -19,7 +19,7 @@ BEGIN
    PROCESS (clk)
    BEGIN
  -- clk'event AND clk = '1'
-      IF (rising_edge(clk)) THEN
+      IF (falling_edge(clk)) THEN
          IF (writeControl = '1') THEN
             ram_block((to_integer(unsigned(address)))) <= input;
          END IF;
