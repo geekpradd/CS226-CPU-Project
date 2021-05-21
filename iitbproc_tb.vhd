@@ -31,8 +31,8 @@ begin
 	
 	
 	process 
-		file in_file: text open read_mode is "D:/Courses/CS226-CPU-Project/input_file.txt";
-		file output_file: text open write_mode is "D:/Courses/CS226-CPU-Project/output_file.txt";
+		file in_file: text open read_mode is "E:/226/input_file.txt";
+		file output_file: text open write_mode is "E:/226/output_file.txt";
 		variable in_line,output_line : line;
 		variable in_var,output_var : std_logic_vector(15 downto 0);
 		variable count : integer range 0 to 64;
@@ -57,9 +57,23 @@ begin
 				wait for 100 ns;
 				wa <= std_logic_vector ( unsigned(wa) + 1);
 				count := count + 1;
+	
 			end loop;
 			
-			
+			rst <= '1';
+			mw <= '0';
+			clk <= '1';
+			wait for 100 ns;
+			clk <= '0';
+			wait for 100 ns;
+	
+			rst <= '0';
+			for i in 1 to 1000 loop
+				clk <= '1';
+				wait for 100 ns;
+				clk <= '0';
+				wait for 100 ns;
+			end loop;
 			
 			
 --			execute instructions
@@ -88,20 +102,20 @@ begin
 --				wa <= std_logic_vector ( unsigned(wa) + 1);
 --			end loop;
 			
-			wa <= "0000000000000000";
-			clk <= '0';
-			wait for 100 ns;
-			clk <= '1';
-			wait for 100 ns;
-			clk <= '0';
-			wait for 100 ns;
-			rst <='1';
-			clk <= '1';
-			wait for 100 ns;
-			clk <= '0';
-			wait for 100 ns;
-			clk <= '1';
-			wait for 100 ns;
+--			wa <= "0000000000000000";
+--			clk <= '0';
+--			wait for 100 ns;
+--			clk <= '1';
+--			wait for 100 ns;
+--			clk <= '0';
+--			wait for 100 ns;
+--			rst <='1';
+--			clk <= '1';
+--			wait for 100 ns;
+--			clk <= '0';
+--			wait for 100 ns;
+--			clk <= '1';
+--			wait for 100 ns;
 			
 	wait;
 	end process;
