@@ -16,7 +16,11 @@ You can use the `asm2bin.py` script to convert assembly to binary. We have suppl
 The design documents are in the documents folder, it contains the design specification, the FSM diagram, the RTL diagra, and the FSM state transition table as an excel file.
 
 Submitted by:
-Pradipta Bora
-Harshit Gupta
-Ankit Kumar Jain
-Vibhav Aggarwal
+
+Pradipta Bora (190050089)
+
+Harshit Gupta (190050048)
+
+Ankit Kumar Jain (190050019)
+
+Vibhav Aggarwal (190050128)
