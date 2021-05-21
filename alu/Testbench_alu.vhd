@@ -11,25 +11,25 @@ end Testbench_alu;
 
 architecture behav1 of Testbench_alu is
 	--Input signals
-	signal A 	      : bit_vector(15 downto 0) ;
-	signal B 	      : bit_vector(15 downto 0) ;
-	signal ALU_ctrl 	: bit_vector(1 downto 0);
+	signal A 	      : std_logic_vector(15 downto 0) ;
+	signal B 	      : std_logic_vector(15 downto 0) ;
+	signal ALU_ctrl 	: std_logic_vector(1 downto 0);
 
 	--To read and write to file
 	file file_VECTORS : text;
 	file file_RESULTS : text;
 
 	--output signals
-	signal carry_out, zero_bit : bit;
-	signal ALU_out 		      : bit_vector(15 downto 0);
+	signal carry_out, zero_bit : std_logic;
+	signal ALU_out 		      : std_logic_vector(15 downto 0);
 	
 	--ALU component
 	component ALU is 
 		port(
-		 	A, B 		: in bit_vector(15 downto 0);		-- operands
-			ALU_ctrl		: in bit_vector(1 downto 0); -- Control
-			carry_out, zero_bit: out bit;		-- carry_out, zero flag
-			ALU_out 		: out bit_vector(15 downto 0)	-- result
+		 	A, B 		: in std_logic_vector(15 downto 0);		-- operands
+			ALU_ctrl		: in std_logic_vector(1 downto 0); -- Control
+			carry_out, zero_bit: out std_logic;		-- carry_out, zero flag
+			ALU_out 		: out std_logic_vector(15 downto 0)	-- result
 		);
 	end component;
 
@@ -42,9 +42,9 @@ architecture behav1 of Testbench_alu is
 			-- This is to take i/o from file : "tb.txt" which contains our test cases
 			variable v_ILINE   : line;							
 			variable v_OLINE   : line;
-			variable v_A       : bit_vector(15 downto 0);
-			variable v_B       : bit_vector(15 downto 0);
-			variable v_ctrl    : bit_vector(1 downto 0);
+			variable v_A       : std_logic_vector(15 downto 0);
+			variable v_B       : std_logic_vector(15 downto 0);
+			variable v_ctrl    : std_logic_vector(1 downto 0);
 			variable v_SPACE_1 : character;
 			variable v_SPACE_2 : character;
 		

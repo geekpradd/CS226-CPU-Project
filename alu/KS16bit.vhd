@@ -1,23 +1,32 @@
 library std;
 use std.standard.all;
+use work.all;
 library ieee;
 use ieee.std_logic_1164.all;
-library ieee;
-use ieee.numeric_std.all; 
-
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;	 
+use ieee.std_logic_unsigned.all;
 entity KS16bit is
 
-	port (G,P : in bit_vector(15 downto 0);
-			Cin : in bit;
-			S : out bit_vector(16 downto 0));  
+	port (G,P : in std_logic_vector(15 downto 0);
+			Cin : in std_logic;
+			S : out std_logic_vector(16 downto 0));  
 			
 end entity KS16bit;
 
 --------node in the ks adder------
+library std;
+use std.standard.all;
+use work.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;	 
+use ieee.std_logic_unsigned.all;
 
 entity node is
-	port( Gcurr,Gprev,Pcurr,Pprev : in bit;
-			Gout, Pout : out bit);
+	port( Gcurr,Gprev,Pcurr,Pprev : in std_logic;
+			Gout, Pout : out std_logic);
 end entity node;
 
 
@@ -27,10 +36,18 @@ begin
 	Pout <= Pcurr and Pprev;
 end bhv; 
 
+library std;
+use std.standard.all;
+use work.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;	 
+use ieee.std_logic_unsigned.all;
 
 entity buffer_block is 
-	port( Gcurr,Pcurr : in bit;
-			Gout, Pout : out bit);
+	port( Gcurr,Pcurr : in std_logic;
+			Gout, Pout : out std_logic);
 end entity buffer_block;
 
 architecture buff of buffer_block is
@@ -42,19 +59,19 @@ end buff;
 
 architecture behaviour of KS16bit is
 	
-	signal G1, G2, G3, G4 : bit_vector(15 downto 0);
-	signal P1, P2, P3, P4 : bit_vector(15 downto 0);
-	signal C : bit_vector(15 downto 0);
+	signal G1, G2, G3, G4 : std_logic_vector(15 downto 0);
+	signal P1, P2, P3, P4 : std_logic_vector(15 downto 0);
+	signal C : std_logic_vector(15 downto 0);
 
 
 	component node is
-		port( Gcurr,Gprev,Pcurr,Pprev : in bit;
-			Gout, Pout : out bit);
+		port( Gcurr,Gprev,Pcurr,Pprev : in std_logic;
+			Gout, Pout : out std_logic);
 	end component;
 	
 	component buffer_block is 
-		port( Gcurr,Pcurr : in bit;
-			Gout, Pout : out bit);
+		port( Gcurr,Pcurr : in std_logic;
+			Gout, Pout : out std_logic);
 	end component;
 	
 	begin

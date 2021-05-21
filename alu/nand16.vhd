@@ -4,23 +4,23 @@ library ieee;
 use ieee.std_logic_1164.all;
 library ieee;
 use ieee.numeric_std.all; 
--- To calculate the bitwise XOR of two bit_vectors A and B
+-- To calculate the bitwise NAND of two bit_vectors A and B
 
 entity nand_16 is
 
-	port( A, B: in bit_vector(15 downto 0);
-		   S: out bit_vector(16 downto 0));
+	port( A, B: in std_logic_vector(15 downto 0);
+		   S: out std_logic_vector(16 downto 0));
 			
 end nand_16;
 
 architecture behav of nand_16 is
 
 	component two_nand is
-		port(A,B : in bit;
-				C : out bit);
+		port(A,B : in std_logic;
+				C : out std_logic);
 	end component two_nand;	
 	
-	signal temp : bit_vector(15 downto 0);
+	signal temp : std_logic_vector(15 downto 0);
 	begin
 		lvl1:
 		

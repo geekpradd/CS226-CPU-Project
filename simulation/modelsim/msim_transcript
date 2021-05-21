@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/Controller.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:33 on May 21,2021
+# Start time: 09:01:35 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/Controller.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,39 +20,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Controller
 # -- Compiling architecture behave of Controller
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(130): (vcom-1272) Length of expected is 16; length of actual is 3.
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(136): (vcom-1272) Length of expected is 3; length of actual is 16.
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(154): (vcom-1272) Length of expected is 3; length of actual is 16.
-# End time: 01:51:33 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 3
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:33 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Testbench_alu
-# -- Compiling architecture behav1 of Testbench_alu
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:01
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/testbench.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/testbench.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity testbench
-# -- Compiling architecture tb of testbench
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/testbench.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/two_nand.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/two_nand.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -60,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity two_nand
 # -- Compiling architecture Behavioral of two_nand
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -72,11 +44,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Sub16bit
 # -- Compiling architecture subbhv of Sub16bit
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/nand16.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/nand16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -84,27 +56,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity nand_16
 # -- Compiling architecture behav of nand_16
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity KS16bit
-# -- Compiling entity node
-# -- Compiling architecture bhv of node
-# -- Compiling entity buffer_block
-# -- Compiling architecture buff of buffer_block
-# -- Compiling architecture behaviour of KS16bit
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/four_or.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/four_or.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -112,11 +68,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity four_or
 # -- Compiling architecture or4_bhv of four_or
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -124,13 +80,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU
 # -- Compiling architecture ALU_behavior of ALU
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/ALU.vhd(49): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 2 is not equal to right length 8).
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/ALU.vhd(54): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 2 is not equal to right length 8).
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:34 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -138,11 +92,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder16bit
 # -- Compiling architecture addbhv of Adder16bit
-# End time: 01:51:34 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:36 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -150,11 +104,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity RAM
 # -- Compiling architecture rtl of RAM
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:36 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_file.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:37 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -162,11 +116,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture arch of register_file
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:37 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -174,11 +128,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_16bit
 # -- Compiling architecture arch of register_16bit
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_1bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:37 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_1bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -186,11 +140,24 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_1bit
 # -- Compiling architecture arch of register_1bit
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:37 on May 21,2021
+# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cputest
+# -- Compiling architecture behv of cputest
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:37 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -200,25 +167,30 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity iitbproc
 # -- Compiling architecture final of iitbproc
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
+# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
+# Start time: 09:01:37 on May 21,2021
+# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
 # -- Loading package NUMERIC_STD
-# -- Compiling entity cputest
-# -- Compiling architecture behv of cputest
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KS16bit
+# -- Compiling entity node
+# -- Compiling architecture bhv of node
+# -- Compiling entity buffer_block
+# -- Compiling architecture buff of buffer_block
+# -- Compiling architecture behaviour of KS16bit
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:37 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -227,12 +199,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity cputest
 # -- Compiling architecture behv of cputest
-# End time: 01:51:35 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:01:37 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  cputest
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" cputest 
-# Start time: 01:51:35 on May 21,2021
+# Start time: 09:01:38 on May 21,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -246,749 +218,14 @@
 # Loading work.ram(rtl)
 # Loading work.register_file(arch)
 # Loading work.register_1bit(arch)
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cputest/dut_instance/rf
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /cputest/dut_instance/rf
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 0
-#    Time: 100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 0
-#    Time: 300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 1 0
-#    Time: 700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 1 60298
-#    Time: 900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 2 0
-#    Time: 1100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 2 54268
-#    Time: 1300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 3 0
-#    Time: 1500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 3 39238
-#    Time: 1700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 4 0
-#    Time: 1900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 4 26150
-#    Time: 2100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 5 0
-#    Time: 2300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 5 10164
-#    Time: 2500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 6 0
-#    Time: 2700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 6 9392
-#    Time: 2900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 7 0
-#    Time: 3100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 7 27287
-#    Time: 3300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 8 0
-#    Time: 3500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 8 62134
-#    Time: 3700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 9 0
-#    Time: 3900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 9 31966
-#    Time: 4100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 10 0
-#    Time: 4300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 10 58248
-#    Time: 4500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 11 0
-#    Time: 4700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 11 64657
-#    Time: 4900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 12 0
-#    Time: 5100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 12 62228
-#    Time: 5300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 13 0
-#    Time: 5500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 13 34705
-#    Time: 5700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 14 0
-#    Time: 5900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 14 22770
-#    Time: 6100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 15 0
-#    Time: 6300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 15 43396
-#    Time: 6500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 16 0
-#    Time: 6700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 16 65200
-#    Time: 6900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 17 0
-#    Time: 7100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 17 62199
-#    Time: 7300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 18 0
-#    Time: 7500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 18 60036
-#    Time: 7700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 19 0
-#    Time: 7900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 19 9214
-#    Time: 8100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 8300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 20 0
-#    Time: 8300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 20 2132
-#    Time: 8500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 8700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 21 0
-#    Time: 8700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 21 49373
-#    Time: 8900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 22 0
-#    Time: 9100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 22 54387
-#    Time: 9300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 23 0
-#    Time: 9500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 23 3206
-#    Time: 9700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 24 0
-#    Time: 9900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 24 23323
-#    Time: 10100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 10300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 25 0
-#    Time: 10300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 25 28797
-#    Time: 10500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 10700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 26 0
-#    Time: 10700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 26 39559
-#    Time: 10900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 27 0
-#    Time: 11100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 27 48133
-#    Time: 11300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 28 0
-#    Time: 11500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 28 7536
-#    Time: 11700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 29 0
-#    Time: 11900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 29 31186
-#    Time: 12100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 30 0
-#    Time: 12300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 30 45842
-#    Time: 12500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 31 0
-#    Time: 12700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 31 45568
-#    Time: 12900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 13100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 13300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 13500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 13700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 13900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 14100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 14300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 14500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 14700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 14900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 15100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 15300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 15500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 15700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 15900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 16100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 16300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 16500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 16700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 16900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 17100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 17300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 17500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 17700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 17900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 18100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 18300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 18500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 18700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 18900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 19100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19100 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 19300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19300 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 19500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19500 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 19700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19700 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Note: 0 6447
-#    Time: 19900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-do iitbproc_run_msim_rtl_vhdl.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/Controller.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:51 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/Controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Controller
-# -- Compiling architecture behave of Controller
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(130): (vcom-1272) Length of expected is 16; length of actual is 3.
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(136): (vcom-1272) Length of expected is 3; length of actual is 16.
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(154): (vcom-1272) Length of expected is 3; length of actual is 16.
-# End time: 01:57:51 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 3
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:51 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Testbench_alu
-# -- Compiling architecture behav1 of Testbench_alu
-# End time: 01:57:51 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/testbench.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:51 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/testbench.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity testbench
-# -- Compiling architecture tb of testbench
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/testbench.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 01:57:51 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/two_nand.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:51 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/two_nand.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity two_nand
-# -- Compiling architecture Behavioral of two_nand
-# End time: 01:57:51 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:51 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Sub16bit
-# -- Compiling architecture subbhv of Sub16bit
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/nand16.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/nand16.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity nand_16
-# -- Compiling architecture behav of nand_16
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity KS16bit
-# -- Compiling entity node
-# -- Compiling architecture bhv of node
-# -- Compiling entity buffer_block
-# -- Compiling architecture buff of buffer_block
-# -- Compiling architecture behaviour of KS16bit
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/four_or.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/four_or.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity four_or
-# -- Compiling architecture or4_bhv of four_or
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/ALU.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/ALU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU
-# -- Compiling architecture ALU_behavior of ALU
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/ALU.vhd(49): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 2 is not equal to right length 8).
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/ALU.vhd(54): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 2 is not equal to right length 8).
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Adder16bit
-# -- Compiling architecture addbhv of Adder16bit
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/RAM.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/RAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity RAM
-# -- Compiling architecture rtl of RAM
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_file.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture arch of register_file
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_16bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:52 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_16bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_16bit
-# -- Compiling architecture arch of register_16bit
-# End time: 01:57:52 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_1bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:53 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_1bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_1bit
-# -- Compiling architecture arch of register_1bit
-# End time: 01:57:53 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:53 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity iitbproc
-# -- Compiling architecture final of iitbproc
-# End time: 01:57:53 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:53 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package NUMERIC_STD
-# -- Compiling entity cputest
-# -- Compiling architecture behv of cputest
-# End time: 01:57:53 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:57:53 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package NUMERIC_STD
-# -- Compiling entity cputest
-# -- Compiling architecture behv of cputest
-# End time: 01:57:53 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  cputest
-# End time: 01:57:55 on May 21,2021, Elapsed time: 0:06:20
-# Errors: 0, Warnings: 144
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" cputest 
-# Start time: 01:57:55 on May 21,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.numeric_std(body)
-# Loading work.cputest(behv)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.iitbproc(final)
-# Loading work.register_16bit(arch)
-# Loading work.ram(rtl)
-# Loading work.register_file(arch)
-# Loading work.register_1bit(arch)
+# Loading work.alu(alu_behavior)
+# Loading work.nand_16(behav)
+# Loading work.two_nand(behavioral)
+# Loading work.adder16bit(addbhv)
+# Loading work.ks16bit(behaviour)
+# Loading work.buffer_block(buff)
+# Loading work.node(bhv)
+# Loading work.sub16bit(subbhv)
 # 
 # add wave *
 # view structure
@@ -1430,7 +667,7 @@ do iitbproc_run_msim_rtl_vhdl.do
 # 
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/Controller.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:24 on May 21,2021
+# Start time: 09:03:27 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/Controller.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1438,39 +675,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Controller
 # -- Compiling architecture behave of Controller
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(130): (vcom-1272) Length of expected is 16; length of actual is 3.
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(136): (vcom-1272) Length of expected is 3; length of actual is 16.
-# ** Warning: D:/Courses/CS226-CPU-Project/Controller.vhd(154): (vcom-1272) Length of expected is 3; length of actual is 16.
-# End time: 01:59:24 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 3
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:24 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Testbench_alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Testbench_alu
-# -- Compiling architecture behav1 of Testbench_alu
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:01
+# End time: 09:03:27 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/testbench.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/testbench.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity testbench
-# -- Compiling architecture tb of testbench
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/testbench.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/two_nand.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:27 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/two_nand.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1478,11 +687,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity two_nand
 # -- Compiling architecture Behavioral of two_nand
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:27 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:27 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Sub16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1490,11 +699,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Sub16bit
 # -- Compiling architecture subbhv of Sub16bit
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:27 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/nand16.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:27 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/nand16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1502,27 +711,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity nand_16
 # -- Compiling architecture behav of nand_16
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity KS16bit
-# -- Compiling entity node
-# -- Compiling architecture bhv of node
-# -- Compiling entity buffer_block
-# -- Compiling architecture buff of buffer_block
-# -- Compiling architecture behaviour of KS16bit
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:27 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/four_or.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:27 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/four_or.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1530,11 +723,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity four_or
 # -- Compiling architecture or4_bhv of four_or
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:27 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1542,13 +735,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU
 # -- Compiling architecture ALU_behavior of ALU
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/ALU.vhd(49): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 2 is not equal to right length 8).
-# ** Warning: D:/Courses/CS226-CPU-Project/alu/ALU.vhd(54): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 2 is not equal to right length 8).
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/Adder16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1556,11 +747,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder16bit
 # -- Compiling architecture addbhv of Adder16bit
-# End time: 01:59:25 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:25 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1568,11 +759,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity RAM
 # -- Compiling architecture rtl of RAM
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:01
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_file.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:26 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1580,11 +771,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture arch of register_file
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:26 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1592,11 +783,11 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_16bit
 # -- Compiling architecture arch of register_16bit
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/register_1bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:26 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/register_1bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1604,11 +795,24 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_1bit
 # -- Compiling architecture arch of register_1bit
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:03:28 on May 21,2021
+# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cputest
+# -- Compiling architecture behv of cputest
+# End time: 09:03:28 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:26 on May 21,2021
+# Start time: 09:03:28 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1618,25 +822,30 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity iitbproc
 # -- Compiling architecture final of iitbproc
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:29 on May 21,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
+# vcom -93 -work work {D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:26 on May 21,2021
-# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
+# Start time: 09:03:29 on May 21,2021
+# vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/alu/KS16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
 # -- Loading package NUMERIC_STD
-# -- Compiling entity cputest
-# -- Compiling architecture behv of cputest
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:00
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KS16bit
+# -- Compiling entity node
+# -- Compiling architecture bhv of node
+# -- Compiling entity buffer_block
+# -- Compiling architecture buff of buffer_block
+# -- Compiling architecture behaviour of KS16bit
+# End time: 09:03:29 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:59:26 on May 21,2021
+# Start time: 09:03:29 on May 21,2021
 # vcom -reportprogress 300 -93 -work work D:/Courses/CS226-CPU-Project/iitbproc_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1645,14 +854,14 @@ do iitbproc_run_msim_rtl_vhdl.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity cputest
 # -- Compiling architecture behv of cputest
-# End time: 01:59:26 on May 21,2021, Elapsed time: 0:00:00
+# End time: 09:03:29 on May 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  cputest
-# End time: 01:59:28 on May 21,2021, Elapsed time: 0:01:33
+# End time: 09:03:31 on May 21,2021, Elapsed time: 0:01:53
 # Errors: 0, Warnings: 176
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" cputest 
-# Start time: 01:59:28 on May 21,2021
+# Start time: 09:03:31 on May 21,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -1666,6 +875,14 @@ do iitbproc_run_msim_rtl_vhdl.do
 # Loading work.ram(rtl)
 # Loading work.register_file(arch)
 # Loading work.register_1bit(arch)
+# Loading work.alu(alu_behavior)
+# Loading work.nand_16(behav)
+# Loading work.two_nand(behavioral)
+# Loading work.adder16bit(addbhv)
+# Loading work.ks16bit(behaviour)
+# Loading work.buffer_block(buff)
+# Loading work.node(bhv)
+# Loading work.sub16bit(subbhv)
 # 
 # add wave *
 # view structure
@@ -2095,5 +1312,5 @@ do iitbproc_run_msim_rtl_vhdl.do
 #    Time: 6900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 6900 ns  Iteration: 1  Instance: /cputest/dut_instance/memory
-# End time: 02:04:03 on May 21,2021, Elapsed time: 0:04:35
+# End time: 09:04:44 on May 21,2021, Elapsed time: 0:01:13
 # Errors: 0, Warnings: 176

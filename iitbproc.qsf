@@ -55,8 +55,6 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name VHDL_FILE iitbproc_tb.vhd
 set_global_assignment -name VHDL_FILE iitbproc.vhd
 set_global_assignment -name VHDL_FILE Controller.vhd
-set_global_assignment -name VHDL_FILE alu/Testbench_alu.vhd
-set_global_assignment -name VHDL_FILE alu/testbench.vhd
 set_global_assignment -name VHDL_FILE alu/two_nand.vhd
 set_global_assignment -name VHDL_FILE alu/Sub16bit.vhd
 set_global_assignment -name VHDL_FILE alu/nand16.vhd

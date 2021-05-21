@@ -7,11 +7,11 @@ use ieee.numeric_std.all;
 
 entity ALU is
 	port(
-		A, B : in bit_vector(15 downto 0);                 --Inputs
-		control : in bit_vector(1 downto 0);    				--Control bit
+		A, B : in std_logic_vector(15 downto 0);                 --Inputs
+		control : in std_logic_vector(1 downto 0);    				--Control bit
 
-		ALU_out : out bit_vector(15 downto 0);					--Output vector
-		carry, zero : out bit								--Carry_out, zero bit
+		ALU_out : out std_logic_vector(15 downto 0);					--Output vector
+		carry, zero : out std_logic								--Carry_out, zero bit
 		);
 
 end entity ALU;
@@ -19,24 +19,24 @@ end entity ALU;
 architecture ALU_behavior of ALU is
 	
 	component nand_16 is
-	port (A, B: in bit_vector(15 downto 0);
-		   S: out bit_vector(16 downto 0));
+	port (A, B: in std_logic_vector(15 downto 0);
+		   S: out std_logic_vector(16 downto 0));
 	end component nand_16;
 
 	component Adder16bit is
-	port (A,B : in bit_vector(15 downto 0);
-			S : out bit_vector(16 downto 0));
+	port (A,B : in std_logic_vector(15 downto 0);
+			S : out std_logic_vector(16 downto 0));
 	end component Adder16bit;
 	
 	component Sub16bit is 
-	port (A,B : in bit_vector(15 downto 0);
-			S : out bit_vector(16 downto 0));
+	port (A,B : in std_logic_vector(15 downto 0);
+			S : out std_logic_vector(16 downto 0));
 		
 	end component Sub16bit;
 	
-	signal temp_nand : bit_vector(16 downto 0);
-	signal temp_add : bit_vector(16 downto 0);
-	signal temp_sub : bit_vector(16 downto 0);
+	signal temp_nand : std_logic_vector(16 downto 0);
+	signal temp_add : std_logic_vector(16 downto 0);
+	signal temp_sub : std_logic_vector(16 downto 0);
 	
 	begin
 
@@ -46,12 +46,12 @@ architecture ALU_behavior of ALU is
 	
 		process (control, temp_nand, temp_add, temp_sub)
 		begin
-			if (control = x"10") then
+			if (control = "10") then
 				ALU_out <= temp_nand(15 downto 0);
 				carry <= temp_nand(16);
 				zero <= not (temp_nand(0) or temp_nand(1) or temp_nand(2) or temp_nand(3) or temp_nand(4) or temp_nand(5) or temp_nand(6) or temp_nand(7) or temp_nand(8) or temp_nand(9) or temp_nand(10) or temp_nand(11) or temp_nand(12) or temp_nand(13) or temp_nand(14) or temp_nand(15));
 			else 
-				if (control = x"00") then
+				if (control = "00") then
 					ALU_out <= temp_add(15 downto 0);
 					carry <= temp_add(16);
 					zero <= not (temp_add(0) or temp_add(1) or temp_add(2) or temp_add(3) or temp_add(4) or temp_add(5) or temp_add(6) or temp_add(7) or temp_add(8) or temp_add(9) or temp_add(10) or temp_add(11) or temp_add(12) or temp_add(13) or temp_add(14) or temp_add(15));

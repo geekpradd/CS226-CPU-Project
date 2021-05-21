@@ -7,9 +7,9 @@ use ieee.numeric_std.all;
 
 entity two_nand is
  
-	port ( A : in bit; 
-			 B : in bit; 
-			 C : out bit); 
+	port ( A : in std_logic; 
+			 B : in std_logic; 
+			 C : out std_logic); 
 			 
 end two_nand; 
  

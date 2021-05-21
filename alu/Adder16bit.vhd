@@ -8,8 +8,8 @@ use ieee.numeric_std.all;
 -- 16bit Adder code
 entity Adder16bit is 
 
-	port(A,B : in bit_vector(15 downto 0); -- inputs
-			S : out bit_vector(16 downto 0)); -- outputs
+	port(A,B : in std_logic_vector(15 downto 0); -- inputs
+			S : out std_logic_vector(16 downto 0)); -- outputs
 			
 end entity Adder16bit;
 
@@ -19,14 +19,14 @@ architecture addbhv of Adder16bit is
 
 	component KS16bit is
 
-		port (G,P : in bit_vector(15 downto 0);
-				Cin : in bit;
-				S : out bit_vector(16 downto 0));  
+		port (G,P : in std_logic_vector(15 downto 0);
+				Cin : in std_logic;
+				S : out std_logic_vector(16 downto 0));  
 				
 	end component;
 	
-	signal cin : bit;
-	signal gin,pin : bit_vector(15 downto 0); 
+	signal cin : std_logic;
+	signal gin,pin : std_logic_vector(15 downto 0); 
 	
 	begin
 	
