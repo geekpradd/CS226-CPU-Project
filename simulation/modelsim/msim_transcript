@@ -265,3 +265,5 @@
 #    Time: 5500 ns  Iteration: 2  Instance: /cputest/dut_instance/rf
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 6700 ns  Iteration: 2  Instance: /cputest/dut_instance/rf
+# End time: 21:15:26 on May 21,2021, Elapsed time: 0:11:17
+# Errors: 0, Warnings: 9
