@@ -143,7 +143,7 @@ begin
 				alu_a <= t1_out;
 				alu_b <= t2_out;
 				t3_in <= alu_c;
-				if(op_code="0010") then
+				if(op_code="0001" or op_code="0000") then
 					c_in <= alu_carry;
 					z_in <= alu_zero;
 				elsif op_code="0010" or op_code="0100" then
@@ -314,7 +314,7 @@ begin
 				alu_b <= "0000000000000001";
 				t2_in <= alu_c;
 
-				if (t2_out(3 downto 0) = "1000") then
+				if (alu_c(3 downto 0) = "1000") then
 					next_state := Sres;
 				else
 					if (op_code = "0111") then

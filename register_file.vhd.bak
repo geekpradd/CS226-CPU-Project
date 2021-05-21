@@ -6,7 +6,6 @@ entity register_file is
   port(
     outputA        : out std_logic_vector(15 downto 0);
     outputB        : out std_logic_vector(15 downto 0);
-	 outr0       : out std_logic_vector(15 downto 0);
     input       : in  std_logic_vector(15 downto 0);
     writeControl : in  std_logic;
     regASel     : in  std_logic_vector(2 downto 0);
@@ -23,7 +22,6 @@ architecture arch of register_file is
 begin
   outputA <= registers(to_integer(unsigned(regASel)));
   outputB <= registers(to_integer(unsigned(regBSel)));
-  outr0 <= registers(0);
 		
   regFile : process (clk) is
   begin

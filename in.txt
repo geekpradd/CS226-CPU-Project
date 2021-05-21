@@ -1,0 +1,9 @@
+adi r1 r1 17
+adi r2 r2 14
+adi r4 r4 4
+adi r5 r5 8
+add r0 r1 r0
+adi r3 r3 1
+beq r2 r3 2
+jalr r7 r4
+jalr r7 r5

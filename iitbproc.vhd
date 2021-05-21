@@ -13,7 +13,8 @@ entity iitbproc is
 			clk : in std_logic;
 			rst : in std_logic;
 			mw: in std_logic;
-			state_out: out std_logic_vector(4 downto 0)
+			state_out: out std_logic_vector(4 downto 0);
+			r0 : out std_logic_vector(15 downto 0)
 			);
 end entity;
 
@@ -40,6 +41,7 @@ architecture final of iitbproc is
 	  port(
 		 outputA        : out std_logic_vector(15 downto 0);
 		 outputB        : out std_logic_vector(15 downto 0);
+		 outr0            : out std_logic_vector(15 downto 0);
 		 input       : in  std_logic_vector(15 downto 0);
 		 writeControl : in  std_logic;
 		 regASel     : in  std_logic_vector(2 downto 0);
@@ -96,7 +98,7 @@ architecture final of iitbproc is
 		pc: register_16bit port map(pc_out, pc_in, pc_w, clk, rst);
 		memory: RAM port map(memory_address, memory_din, mem_dout, memory_write, clk);
 		ir: register_16bit port map(ir_out, ir_in, ir_w, clk, rst);
-		rf: register_file port map(rf_d1, rf_d2, rf_d3, rf_w, rf_a1, rf_a2, rf_a3, clk);
+		rf: register_file port map(rf_d1, rf_d2, r0, rf_d3, rf_w, rf_a1, rf_a2, rf_a3, clk);
 		t1: register_16bit port map(t1_out, t1_in, t1_w, clk, rst);
 		t2: register_16bit port map(t2_out, t2_in, t2_w, clk, rst);
 		t3: register_16bit port map(t3_out, t3_in, t3_w, clk, rst);
