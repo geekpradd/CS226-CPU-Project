@@ -33,8 +33,8 @@ begin
 	
 	
 	process 
-		file in_file: text open read_mode is "E:/226/input_file.txt";
-		file output_file: text open write_mode is "E:/226/output_file.txt";
+		file in_file: text open read_mode is "/path/to/example_code/input_file.txt";
+		file output_file: text open write_mode is "/path/to/example_code/output_file.txt";
 		variable in_line,output_line : line;
 		variable in_var,output_var : std_logic_vector(15 downto 0) := "0000000000000000";
 		variable count : integer range 0 to 64;

@@ -7,7 +7,7 @@ codes = {"add": ("0000", 0), "adc": ("0000", 0), "adz": ("0000", 0), \
 }
 
 import sys
-in_file = open('in.txt', 'r')
+in_file = open('fibonacci.asm', 'r')
 out_file = open('input_file.txt', 'w')
 
 lines = in_file.readlines()
