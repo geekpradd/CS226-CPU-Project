@@ -4,7 +4,7 @@ The processor is built on VHDL and uses the Cyclone V device to ensure 1 MB of R
 
 The main entity is called iitbproc, it outputs the current value of register 0 and current state (for ease of debugging)
 
-To run the setup please use the supplied testbench (`iitbproc_tb.vhd`), simply change the location of the input file. The input file contains the assembly code in binary format, to convert assembly code into binary, please use the `asm2bin.py` script.
+To run the setup please use the supplied testbench (`iitbproc_tb.vhd`), simply change the location of the input and output files. The input file contains the assembly code in binary format, to convert assembly code into binary, please use the `asm2bin.py` script present in `example_code` folder. A sample binary file has already been provided by the name `input_file.txt` in the same folder.
 
 In the Testbench (`iitbproc_tb.vhd`): 
 1. Change the path of input file (containing instructions to run) on line 36.
