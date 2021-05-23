@@ -182,7 +182,11 @@ begin
 				t2_write <= '1';
 				rf_a1 <= ir_out(11 downto 9);
 				t1_in <= rf_d1;
-				t2_in <= "0000000000" & ir_out(5 downto 0);
+				if ir_out(5) = '0' then
+					t2_in <= "0000000000" & ir_out(5 downto 0);
+				else
+					t2_in <= "1111111111" & ir_out(5 downto 0);
+				end if;
 
 				if (op_code = "0001") then
 					next_state := S2;
@@ -227,7 +231,12 @@ begin
 				t2_write <= '1';
 				rf_a2 <= ir_out(8 downto 6);
 				t2_in <= rf_d2;
-				t1_in <= "0000000000" & ir_out(5 downto 0);
+
+				if ir_out(5) = '0' then
+					t1_in <= "0000000000" & ir_out(5 downto 0);
+				else
+					t1_in <= "1111111111" & ir_out(5 downto 0);
+				end if;
 
 				if (op_code = "0100" or op_code = "0101") then
 					next_state := S2;
@@ -363,7 +372,11 @@ begin
 				pc_write <= '1';
 				alu_op <= "00";
 				alu_a <= pc_out;
-				alu_b <= "0000000000" & ir_out(5 downto 0);
+				if ir_out(5) = '0' then
+					alu_b <= "0000000000" & ir_out(5 downto 0);
+				else
+					alu_b <= "1111111111" & ir_out(5 downto 0);
+				end if;
 				pc_in <= alu_c;
 				next_state := Sres;
 -----------------------------------------------------------------
@@ -388,7 +401,11 @@ begin
 				pc_write <= '1';
 				alu_op <= "00";
 				alu_a <= pc_out;
-				alu_b <= "0000000" & ir_out(8 downto 0);
+				if ir_out(8) = '0' then
+					alu_b <= "0000000" & ir_out(8 downto 0);
+				else
+					alu_b <= "1111111" & ir_out(8 downto 0);
+				end if;
 				pc_in <= alu_c;
 				next_state := Sres;
 -----------------------------------------------------------------
