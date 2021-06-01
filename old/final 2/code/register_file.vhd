@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity register_file is
+  port(
+    outputA        : out std_logic_vector(15 downto 0);
+    outputB        : out std_logic_vector(15 downto 0);
+	 outr0       : out std_logic_vector(15 downto 0);
+    input       : in  std_logic_vector(15 downto 0);
+    writeControl : in  std_logic;
+    regASel     : in  std_logic_vector(2 downto 0);
+    regBSel     : in  std_logic_vector(2 downto 0);
+    writeRegSel : in  std_logic_vector(2 downto 0);
+    clk         : in  std_logic
+    );
+end register_file;
+
+
+architecture arch of register_file is
+  type registerFile is array(0 to 7) of std_logic_vector(15 downto 0);
+  signal registers : registerFile := (others=>"0000000000000000");
+begin
+  outputA <= registers(to_integer(unsigned(regASel)));
+  outputB <= registers(to_integer(unsigned(regBSel)));
+  outr0 <= registers(0);
+		
+  regFile : process (clk) is
+  begin
+    if rising_edge(clk) then
+
+      if writeControl = '1' then
+        registers(to_integer(unsigned(writeRegSel))) <= input; 
+      end if;
+
+    end if;
+  end process;
+end arch;

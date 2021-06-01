@@ -4,7 +4,7 @@ The processor is built on VHDL and uses the Cyclone V device to ensure 1 MB of R
 
 The main entity is called iitbproc, it outputs the current value of register 0 and current state (for ease of debugging)
 
-To run the setup please use the supplied testbench (`iitbproc_tb.vhd`), simply change the location of the input and output files. The input file contains the assembly code in binary format, to convert assembly code into binary, please use the `asm2bin.py` script present in `example_code` folder. A sample binary file has already been provided by the name `input_file.txt` in the same folder.
+To run the setup please use the supplied testbench (`iitbproc_tb.vhd`), simply change the location of the input file. The input file contains the assembly code in binary format, to convert assembly code into binary, please use the `asm2bin.py` script.
 
 In the Testbench (`iitbproc_tb.vhd`): 
 1. Change the path of input file (containing instructions to run) on line 36.
@@ -16,11 +16,7 @@ You can use the `asm2bin.py` script to convert assembly to binary. We have suppl
 The design documents are in the documents folder, it contains the design specification, the FSM diagram, the RTL diagra, and the FSM state transition table as an excel file.
 
 Submitted by:
-
-Pradipta Bora (190050089)
-
-Harshit Gupta (190050048)
-
-Ankit Kumar Jain (190050019)
-
-Vibhav Aggarwal (190050128)
+Pradipta Bora
+Harshit Gupta
+Ankit Kumar Jain
+Vibhav Aggarwal
