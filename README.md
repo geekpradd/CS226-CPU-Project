@@ -1,6 +1,6 @@
 ## RISC 16-Bit Processor 
 
-The processor is built on VHDL and uses the Cyclone V device to ensure 1 MB of RAM. Please ensure Cyclone V is installed on your VHDL setup.
+This is a 16 bit processor built on VHDL and uses the Cyclone V device to ensure 1 MB of RAM. Please ensure Cyclone V is installed on your VHDL setup. We use the RISC instruction set here. Built as the course project for CS226, IIT Bombay
 
 The main entity is called iitbproc, it outputs the current value of register 0 and current state (for ease of debugging)
 
